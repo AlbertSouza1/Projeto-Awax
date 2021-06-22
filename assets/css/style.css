@@ -41,6 +41,9 @@ header {
     flex:1;
     justify-content: flex-end;
 }
+.menu-opener {
+    display: none;
+}
 .menu ul,
 .menu li {
     list-style: none;
@@ -466,7 +469,7 @@ CSS DE AREAS ESPECIFICAS
     
 }
 .section-partners img {
-    padding-right: 35px;
+    margin-right: 35px;
 }
 
 #price {
@@ -609,4 +612,500 @@ CSS DE AREAS ESPECIFICAS
 }
 .section-products-area .button:hover {
     background-color: #000;
+}
+
+.section-facts {
+    display: flex;
+}
+.section-fact {
+    
+
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:15px;
+}
+.section-fact h1 {
+    font-size: 35px;
+    color:#f09833;
+}
+.section-fact h4 {
+    text-transform: uppercase;
+    margin-top:20px;
+    font-size: 18px;
+}
+.section-fact p {
+    margin-top: 20px;
+    color:#888 ;
+}
+.section-fact .separator {
+    margin-bottom: -10px;
+    margin-top: 10px;
+    width: 30px;
+}
+
+.section-social {
+    margin-top: -50px;
+    padding:25px;
+    box-shadow: 0px 1px 9px #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-social .tell-about {
+    display: flex;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.section-social .tell-about p {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color:#888;
+    text-transform: uppercase;
+}
+.section-social .social-media {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.section-social a.twitter{
+    background-color: #3badf0;
+}
+.section-social a.linkedin{
+    background-color: #1b86c4;
+}
+.section-social a.facebook{
+    background-color: #105a85;
+}
+.section-social a.googleplus{
+    background-color: rgb(235, 41, 41);
+}
+.section-social a.pinterest{
+    background-color: rgb(190, 62, 62);
+}
+.section-social a.share{
+    background-color: #fff;
+    margin-right: 0px;
+}
+
+.section-contact-us-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-contact-us-area-form {
+    max-width: 500px;
+}
+.section-contact-us-area-form input {
+    border:0;
+    border-bottom: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.section-contact-us-area-form input[name='name'] {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.section-contact-us-area-form input[name='email'] {
+    width: 49%;
+}
+
+.section-contact-us-area-form input[name='subject'],
+.section-contact-us-area-form input[name='message'] {
+    width: 100%;
+}
+.section-contact-us-area .button:hover{
+    background-color: #000;
+}
+
+.section-map {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.section-map-area {
+    width: 100vw;
+    max-width: 1140px;
+    
+}
+.section-map-info {
+    width: 50%;
+    padding:30px;
+    background-color: #fff;
+    color:#999;
+    margin-left: 40px;
+}
+.section-map-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.section-map-info-item-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#999 ;
+    padding:5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.section-map-info-item-icon img {
+    width: 15px;
+    height: auto;
+}
+
+.section-footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+    padding:20px;
+    flex: 1;
+}
+.section-footer-text {
+    flex: 1;
+    padding:20px;
+}
+.section-footer-subscribe {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}
+.section-footer-social-area {
+    display: flex;
+    justify-content: center;
+}
+.section-footer-social-area a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.section-footer-social-area a:hover {
+    background-color: #f09833;
+}
+.section-footer-social-copy {
+    color:#aaa;
+    font-size: 15px;
+}
+.section-footer-text p {
+    color:#999;
+    text-align: justify;
+}
+.section-footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.section-footer-subscribe form input {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border:0;
+    border-bottom: 1px solid #999;
+}
+.section-footer-subscribe form input::placeholder {
+    color:#999;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-footer-subscribe .button {
+    text-align: center;
+}
+.section-footer-subscribe .button:hover {
+    background-color: #000;
+}
+
+
+/*tablets */
+@media (min-width:450px) and (max-width:800px) {
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.912);
+        width: 70vw;
+        height: calc(100vw - 100px);
+        top:100px;
+        right:0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        font-weight: bold;
+        height: 80px;
+        margin-right: 50px;
+        font-size:25px;
+        border:0;
+    }
+    .menu ul li.active a{
+        border:0;
+        color:#f09833;
+    }
+    .menu-opener {
+        width: 40px;
+        margin-right: 30px;
+        display: block;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+
+    .section-about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-about-us-left {
+        margin:30px;
+        margin-top: 0;       
+    }
+    .section-about-us-right{
+        width: auto;
+        height: auto;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+        
+    }
+    .section-service {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child {
+        border-left: 0;
+    }
+    .section-team {
+        width: 580px;
+    }
+    .section-partners {
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+    .section-partners img {
+        max-width: 90px;
+    }
+
+    .section-price .price-item {
+        width: 300px;
+    }
+    .section-products-area .slide-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-facts {
+        flex-wrap: wrap;
+        padding-left:20px;
+        padding-right: 20px;
+        
+    }
+    .section-fact {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .section-map {       
+        padding-right: 30px;
+    }
+    .section-map-info {
+        width: auto;
+    }
+    .section-map-area{ 
+        width: auto;
+    }
+    .section-map-info-item {
+        margin-bottom: 20px;
+    }
+    .section-map-info-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:449px) {
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.912);
+        width: 80vw;
+        height: auto;
+        top:100px;
+        right:0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li a {
+        font-weight: bold;
+        height: 70px;
+        margin-right: 30px;
+        font-size:17px;
+        border:0;
+    }
+    .menu ul li.active a{
+        border:0;
+        color:#f09833;
+    }
+    .menu-opener {
+        width: 40px;
+        margin-right: 30px;
+        display: block;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 17px;
+    }
+
+    .section-about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-about-us-left {
+        margin:30px;
+        margin-top: 0;       
+    }
+    .section-about-us-right{
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .section-about-us-right img {
+        width: 100%;
+    }
+    .section-services {
+        flex-wrap: wrap;
+        
+    }
+    .section-service {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child {
+        border-left: 0;
+    }
+
+    .section-projects-filters {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .section-projects-photo{
+        width: 320px;
+        height: auto;
+    }
+    .section-projects-photoarea {
+        width: 300px;
+        height: auto;
+    }
+    .section-team {
+        width: 280px;
+    }
+    .section-partners {
+        flex-wrap: wrap;
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+    .section-partners img {
+        margin-bottom: 20px;
+        max-width: 90px;
+    }
+
+    .section-price .price-item {
+        width: 300px;
+    }
+    .section-products-area .product-image{
+       margin:40px;
+    }
+    .section-products-area .product-desc {
+        margin:40px;
+    }
+    .section-products-area .slide-area {
+        flex-direction: column;
+        align-items: center;
+        margin:30px;
+    }
+
+    .section-facts {
+        flex-wrap: wrap;
+        padding-left:20px;
+        padding-right: 20px;
+        
+    }
+    .section-fact {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-social{
+        
+    }
+    .section-social a {
+        margin-right: 10px;
+    }
+    .section-map {       
+        padding: 0;
+        padding-bottom: 250px;
+    }
+    .section-map-info {
+        width: auto;
+        margin-left: 0;
+    }
+    .section-map-area{ 
+        width: auto;
+    }
+    .section-map-info-item {
+        margin-bottom: 20px;
+    }
+    .section-map-info-item:last-child {
+        margin-bottom: 0;
+    }
+    .section-footer {
+        flex-direction: column;
+    }
 }
